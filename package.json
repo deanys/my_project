@@ -1,0 +1,26 @@
+{
+    "name": "my_project",
+    "version": "1.0.0",
+    "description": "copy mi.com",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm test",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/deanys/my_project.git"
+    },
+    "keywords": [
+        "javascripts"
+    ],
+    "author": "dean yang",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/deanys/my_project/issues"
+    },
+    "homepage": "https://github.com/deanys/my_project#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2"
+    }
+}
