@@ -21,3 +21,14 @@ function defaultTask(cb) {
 }
 
 exports.default = defaultTask
+
+
+npm install --devDependencies
+
+
+"del": "^6.0.0",
+"gulp": "^4.0.2",
+"gulp-concat": "^2.6.1",
+"gulp-load-plugins": "^2.0.5",
+"gulp-minify-css": "^1.2.4",
+"gulp-uglify": "^3.0.2"
