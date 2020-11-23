@@ -6,9 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
+    <div class="wrap">
+        <div class="bgiframe">
+            <iframe align="center" width="100%" height="686" src="./login_banner.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        </div>
+        <div class="log_mode clearfix">
+            <div class="toggle_login">
+                <a href="javascript:void(0);">账号登录</a>
+                <span class="line"></span>
+                <a href="javascript:void(0);">扫码登录</a>
+            </div>
+            <div class="passw_login clearfix">
+                <input type="text" name="" id="username" placeholder="邮箱/手机号码/小米ID">
+                <input type="password" name="" id="password" placeholder="密码">
+                <button id="button">登录</button>
+                <p><a href="">手机短信登录/注册</a></p>
+                <div class="forget">
+                    <a href="">立即注册</a>
+                    <span class="seq">|</span>
+                    <a href="">忘记密码?</a>
+                </div>
+                <div class="icon_img clearfix">
+                    <a href="" style="background-color: #0288d1;"><i class="icon_qq"></i></a>
+                    <a href="" style="background-color: #d32f2f;"><i class="icon_weibo"></i></a>
+                    <a href="" style="background-color: #0ae;"><i class="icon_zhifu"></i></a>
+                    <a href="" style="background-color: #00d20d;"><i class="icon_weixin"></i></a>
+                </div>
+            </div>
+            <div class="qr_login clearfix hidd">
+                <p>请使用小米手机/米家等小米旗下APP扫码登录</p>
+                <div class="qr">
+                    <img src="../img/qr.png" alt="">
+                </div>
+                <div class="qr_info">
+                    <p>使用 <span>小米商城APP</span> 扫一扫</p>
+                    <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
