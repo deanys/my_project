@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/my_buy.css">
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head_nav">
+            <div class="head_logo">
+                <a href="./index.html" title="小米官网">小米官网</a>
+            </div>
+            <div class="my_buy">
+                <h3>
+                    我的购物车
+                </h3>
+                <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+            </div>
+            <div class="user_info">
+                <div class="uname">
+                    <a href=""> <span id="uname">大梦三生</span><span class="iconfont"></span></a>
+                    <div class="my_menu hidd">
+                        <ul>
+                            <li><a href="">个人中心</a></li>
+                            <li><a href="">评价晒单</a></li>
+                            <li><a href="">我的喜欢</a></li>
+                            <li><a href="">小米账户</a></li>
+                            <li><a href="">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="seq">|</span>
+                <a href="">我的订单</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wraper clearfix">
+        <div class="wrap clearfix">
+            <div class="phone_table">
+                <div class="all_input">
+                    <input type="checkbox" name="" id="qx">
+                    <p>全选</p>
+                </div>
+                <span style="width: 440px;">商品名称</span>
+                <span style="width: 160px;">单价</span>
+                <span style="width: 180px;">数量</span>
+                <span style="width: 130px;">小计</span>
+                <span>操作</span>
+            </div>
+            <div class="item_box clearfix">
+                <!-- <div class="detail_buy clearfix">
+                    <div class="item">
+                        <div class="item_check" style="width: 75px;">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <a href="" style="width: 120px;"><img src="../img/pms_00003.jpg" alt=""></a>
+                        <div class="pin_name" style="width: 440px;">小米10 至尊版</div>
+                        <span style="width: 100px;"><i class="price">1999</i>元</span>
+                        <div class="num_choice" style="width: 230px;">
+                            <div>
+                                <span class="jian">-</span>
+                                <span class="num">3</span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <span style="width: 100px;"><i class="item_price">1999</i>元</span>
+                        <div class="del">
+                            <a href="">X</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail_buy clearfix">
+                    <div class="item">
+                        <div class="item_check" style="width: 75px;">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <a href="" style="width: 120px;"><img src="../img/mip10.jpg" alt=""></a>
+                        <div class="pin_name" style="width: 440px;">小米10 至尊版</div>
+                        <span style="width: 100px;"><i class="price">1999</i>元</span>
+                        <div class="num_choice" style="width: 230px;">
+                            <div>
+                                <span class="jian">-</span>
+                                <span class="num">3</span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <span style="width: 100px;"><i class="item_price">1999</i></span>
+                        <div class="del">
+                            <a href="">X</a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="res">
+                    <div class="res_go"><a href="">继续购物</a>
+                        <span class="seq">|</span>
+                        <span>共<i id="all_num">0</i>件商品，已选择<i id="check_num">0</i>件商品</span>
+                    </div>
+                    <div class="pay"><span>合计 <i id="all_price">0</i>元</span>
+                        <button>去结算</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../js/my_buy.js"></script>
+
+</html>

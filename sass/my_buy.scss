@@ -1,0 +1,293 @@
+        body {
+            background-color: #f5f5f5;
+            min-width: 1226px;
+            // min-width: 1658px;
+        }
+        
+        .hidd {
+            display: none;
+        }
+        
+        .header {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 2px solid #ff6700;
+            .head_nav {
+                height: 100px;
+                width: 1226px;
+                margin-left: auto;
+                margin-right: auto;
+                .head_logo {
+                    width: 93px;
+                    height: 100%;
+                    margin-top: 26px;
+                    float: left;
+                    a {
+                        text-indent: -9999px;
+                        position: relative;
+                        display: block;
+                        width: 48px;
+                        height: 48px;
+                        overflow: hidden;
+                        background-color: #ff6700;
+                        text-align: left;
+                        text-indent: -9999px;
+                        background-image: url(../img/milogo.png);
+                    }
+                }
+                .my_buy {
+                    float: left;
+                    margin-top: 26px;
+                    // background-color: chartreuse;
+                    h3 {
+                        float: left;
+                        line-height: 48px;
+                        margin-bottom: 0;
+                        font-size: 28px;
+                        font-weight: 400;
+                        color: #424242;
+                    }
+                    p {
+                        float: left;
+                        height: 20px;
+                        line-height: 20px;
+                        margin-top: 20px;
+                        margin-left: 15px;
+                        color: #757575;
+                        font-size: 12px;
+                    }
+                }
+                .user_info {
+                    float: right;
+                    margin-top: 30px;
+                    height: 40px;
+                    line-height: 40px;
+                    .uname {
+                        float: left;
+                        width: 110px;
+                        height: 100%;
+                        a {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                    .seq {
+                        float: left;
+                        color: #b0b0b0;
+                        margin-right: 20px;
+                    }
+                    a {
+                        float: left;
+                        height: 100%;
+                        display: block;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+        
+        .wraper {
+            width: 1226px;
+            margin: 0 auto;
+            margin-top: 40px;
+            .wrap {
+                width: 100%;
+                background-color: #fff;
+                .phone_table {
+                    padding: 25px 25px 0 25px;
+                    height: 45px;
+                    border-bottom: 1px solid #e0e0e0;
+                    .all_input {
+                        width: 200px;
+                        float: left;
+                        input {
+                            float: left;
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 15px;
+                        }
+                        p {
+                            width: 100px;
+                            height: 20px;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    span {
+                        float: left;
+                        padding-bottom: 25px;
+                    }
+                }
+                .item_box {
+                    width: 100%;
+                    position: relative;
+                    .detail_buy {
+                        width: 100%;
+                        height: 120px;
+                        padding-left: 25px;
+                        overflow: hidden;
+                        border-bottom: 1px solid #e0e0e0;
+                        .item {
+                            height: 100%;
+                            .item_check {
+                                float: left;
+                                height: 100%;
+                                input {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-top: 50px;
+                                }
+                            }
+                            >a {
+                                float: left;
+                                height: 100px;
+                                padding-top: 20px;
+                                img {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                            }
+                            .pin_name {
+                                float: left;
+                                height: 120px;
+                                font-size: 18px;
+                                font-weight: 400px;
+                                margin-top: 50px;
+                                color: #424242
+                            }
+                            >span {
+                                float: left;
+                                height: 120px;
+                                font-size: 18px;
+                                font-weight: 400px;
+                                margin-top: 50px;
+                                i {
+                                    font-style: normal;
+                                }
+                                .item_price {
+                                    color: #ff6700;
+                                }
+                            }
+                            .num_choice {
+                                float: left;
+                                margin-top: 40px;
+                                div {
+                                    width: 150px;
+                                    height: 38px;
+                                    border: 1px solid #e0e0e0;
+                                    span {
+                                        float: left;
+                                        width: 50px;
+                                        height: 38px;
+                                        text-align: center;
+                                        line-height: 38px;
+                                        font-size: 18px;
+                                    }
+                                    .add:hover {
+                                        background-color: #e0e0e0;
+                                        cursor: pointer;
+                                    }
+                                    .jian:hover {
+                                        background-color: #e0e0e0;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            .del {
+                                float: left;
+                                width: 60px;
+                                height: 120px;
+                                margin-top: 50px;
+                                padding-left: 40px;
+                                // background-color: chartreuse;
+                                a {
+                                    display: block;
+                                    font-size: 16px;
+                                    color: #757575;
+                                    width: 24px;
+                                    text-align: center;
+                                    line-height: 24px;
+                                    // padding-left: 5px;
+                                    height: 24px;
+                                    border-radius: 50%;
+                                }
+                                a:hover {
+                                    cursor: pointer;
+                                    color: #fff;
+                                    background-color: #e53935;
+                                }
+                            }
+                        }
+                    }
+                    .res {
+                        width: 100%;
+                        position: absolute;
+                        bottom: -70px;
+                        height: 50px;
+                        background-color: #fff;
+                        // background-color: red;
+                        .res_go {
+                            height: 100%;
+                            width: 500px;
+                            float: left;
+                            a {
+                                line-height: 50px;
+                                margin-left: 32px;
+                                font-size: 14px;
+                            }
+                            a:hover {
+                                color: #ff6700;
+                            }
+                            .seq {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            span {
+                                font-size: 14px;
+                                color: #b0b0b0;
+                                i {
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    color: #ff6700;
+                                }
+                            }
+                        }
+                        .pay {
+                            float: right;
+                            height: 100%;
+                            width: 400px;
+                            span {
+                                display: block;
+                                float: left;
+                                width: 200px;
+                                text-align: center;
+                                height: 100%;
+                                line-height: 50px;
+                                color: #ff6700;
+                                i {
+                                    font-size: 30px;
+                                    font-style: normal;
+                                }
+                            }
+                            button {
+                                float: right;
+                                outline: none;
+                                border: none;
+                                width: 200px;
+                                height: 50px;
+                                background-color: #ff6700;
+                                display: block;
+                                color: #fff;
+                                font-size: 18px;
+                            }
+                            button:hover {
+                                background-color: #f25807;
+                                cursor: pointer;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
