@@ -151,6 +151,7 @@ $ban_cen:1230px;
                         }
                         .item_children {
                             position: absolute;
+                            display: none;
                             ul>li {
                                 position: relative;
                                 float: left;

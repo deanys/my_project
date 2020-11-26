@@ -173,6 +173,7 @@
 
 .header .site_header .container .header_nav .nav_list li .item_children {
   position: absolute;
+  display: none;
 }
 
 .header .site_header .container .header_nav .nav_list li .item_children ul > li {
