@@ -32,3 +32,42 @@ npm install --devDependencies
 "gulp-load-plugins": "^2.0.5",
 "gulp-minify-css": "^1.2.4",
 "gulp-uglify": "^3.0.2"
+
+
+1.修改npm 源：
+npm --registry https://registry.npm.taobao.org install express
+不影响本地配置，在 npm install XXX 时加入--registry URL即可
+永久：npm config set registry https://registry.npm.taobao.org
+查看：npm config get registry
+改为官方：npm config set registry https://registry.npmjs.org/
+
+
+2.解决跨域问题：
+安装：npm --registry https://registry.npm.taobao.org install gulp-connect-proxy --save-dev
+npm --registry https://registry.npm.taobao.org install gulp-connect --save-dev
+代码如下：
+var Proxy = require('gulp-connect-proxy');
+var connect = require('gulp-connect');
+
+gulp.task("server", function () {
+    connect.server({
+        root: "app",
+        port: 8000,
+        livereload: true,
+        middleware: function (connect, opt) {
+            opt.route = '/proxy';
+            var proxy = new Proxy(opt);
+            return [proxy];
+        }
+    });
+});
+
+在启动 gulp server 任务后, 相当于在本地的8000端口的proxy目录下, 开启了一个转发的服务中间件, 所有的跨越访问, 都经由该服务中间件进行转发.
+
+在访问服务时, 需要在原始URL上添加localhost:8000/proxy/前缀. 例如, 需要访问
+
+localhost:1234/services
+
+则现在需要访问:
+
+localhost:8000/proxy/localhost:1234/services

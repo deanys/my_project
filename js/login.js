@@ -6,7 +6,7 @@ $(function() {
         console.log("正在进行ajax");
         $.ajax({
             type: "POST",
-            url: "http://localhost/mi/my_project/dist/phpcheck_user.php",
+            url: "http://localhost/mi/my_project/dist/php/check_user.php",
             dataType: "json",
             data: localStorage.user_info,
             succes: function(res) {

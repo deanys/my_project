@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin:*");
 header('content-type:text/html;charset=utf-8;');
 $server_host="localhost";
 $host_name="root";

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../swiper/idangerous.swiper.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .my {
+            width: 1226px;
+            height: 460px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .device {
+            width: 1226px;
+            height: 460px;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide img {
+            width: 1226px;
+            height: 460px;
+        }
+        
+        .device .arrow-left {
+            background: url(../img/arrows.png) no-repeat left top;
+            left: 234px;
+            position: absolute;
+            top: 50%;
+            width: 41px;
+            height: 69px;
+            margin-top: -35px;
+            z-index: 10;
+            cursor: pointer;
+            outline: none;
+            background: url(../img/icon-slides.png) no-repeat -84px 50%;
+        }
+        
+        .arrow-left:hover {
+            background-color: #555;
+        }
+        
+        .device .arrow-right {
+            position: absolute;
+            top: 50%;
+            width: 41px;
+            height: 69px;
+            margin-top: -35px;
+            z-index: 10;
+            cursor: pointer;
+            outline: none;
+            right: 0px;
+            background: url(../img/icon-slides.png) no-repeat -125px 50%;
+        }
+        
+        .arrow-right:hover {
+            background-color: #555;
+        }
+        
+        .swiper-wrapper {
+            width: 1226px;
+            height: 460px;
+        }
+        
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .pagination {
+            width: 400px;
+            left: auto;
+            right: 30px;
+            bottom: 20px;
+            text-align: right;
+            position: absolute;
+            z-index: 10;
+            /* background-color: chartreuse; */
+        }
+        
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #999;
+            box-shadow: 0px 1px 2px #555 inset;
+            margin: 0 4px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, .4)
+        }
+        
+        .swiper-active-switch {
+            /* background: #ff6700; */
+            background: hsla(0, 0%, 100%, .4)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my">
+        <div class="device">
+            <a class="arrow-left" href="#"> </a>
+            <a class="arrow-right" href="#"></a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="../img/lunbo1.jpg"> </div>
+                    <div class="swiper-slide"> <img src="../img/lunbo2.jpg"> </div>
+                    <div class="swiper-slide"> <img src="../img/lunbo3.jpg"> </div>
+                    <div class="swiper-slide"> <img src="../img/lunbo4.jpg"> </div>
+                    <div class="swiper-slide"> <img src="../img/lunbo5.jpg"> </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../swiper/jquery-1.10.1.min.js"></script>
+<script src="../swiper/idangerous.swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        pagination: '.pagination',
+        loop: true,
+        grabCursor: true,
+        paginationClickable: true,
+        autoplay: 5000
+
+
+    })
+    $('.arrow-left').on('click', function(e) {
+        e.preventDefault()
+        mySwiper.swipePrev()
+    })
+    $('.arrow-right').on('click', function(e) {
+        e.preventDefault()
+        mySwiper.swipeNext()
+    })
+</script>
+
+</html>
